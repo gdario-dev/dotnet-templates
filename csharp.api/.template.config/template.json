@@ -1,0 +1,26 @@
+{
+
+  "$schema": "http://json.schemastore.org/template",
+  "author": "gdario.dev",
+  "classifications": [ "WebAPI" ],
+  "identity": "gdario.dev.templates.api",
+  "name": "gdario WebAPI",
+  "shortName": "gdario.api",
+  "tags": {
+    "language": "C#",
+    "type": "project"
+  },
+  "symbols": {
+    "appname": {
+      "description": "application name",
+      "isRequired": true,
+      "type":"parameter",
+      "datatype": "string",
+      "defaultValue":"UnknownApplication",
+      "fileRename": "__appname__",
+      "replaces": "__appname__"
+    }    
+
+  }
+
+}
