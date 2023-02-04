@@ -21,8 +21,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Domain.Models", "src\Domain
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Domain.Options", "src\Domain.Options\Domain.Options.csproj", "{91950651-4F5A-4944-A8C1-D6B4FA45B413}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03 - domain.test", "03 - domain.test", "{735C133A-DB3B-469B-94F6-62084C9C8F29}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "04 - infra", "04 - infra", "{96DA167D-D9EF-4E99-A58A-D202A270DC12}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Domain.Usecases", "src\Domain.Usecases\Domain.Usecases.csproj", "{D3610271-FCA7-4977-AFF2-2D692A07A0F5}"
@@ -31,7 +29,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Infra.Persistence", "src\In
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Infra.Http", "src\Infra.Http\Infra.Http.csproj", "{8941A823-EF44-4A2E-A0C1-45A95119F293}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain.Test.Usecases", "src\Domain.Test.Usecases\Domain.Test.Usecases.csproj", "{C2E9805B-A56D-4A4D-8972-CD611C30B1A8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain.Usecases.Test", "src\Domain.Usecases.Test\Domain.Usecases.Test.csproj", "{C2E9805B-A56D-4A4D-8972-CD611C30B1A8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -93,7 +91,7 @@ Global
 		{D3610271-FCA7-4977-AFF2-2D692A07A0F5} = {25DFED1B-9DD3-4E97-B36E-4D37595D6E3F}
 		{90458A58-3AC5-4075-8389-067ED0FDDC34} = {96DA167D-D9EF-4E99-A58A-D202A270DC12}
 		{8941A823-EF44-4A2E-A0C1-45A95119F293} = {96DA167D-D9EF-4E99-A58A-D202A270DC12}
-		{C2E9805B-A56D-4A4D-8972-CD611C30B1A8} = {735C133A-DB3B-469B-94F6-62084C9C8F29}
+		{C2E9805B-A56D-4A4D-8972-CD611C30B1A8} = {25DFED1B-9DD3-4E97-B36E-4D37595D6E3F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D6F8EC5D-D865-494A-A94D-5D2229E26069}
