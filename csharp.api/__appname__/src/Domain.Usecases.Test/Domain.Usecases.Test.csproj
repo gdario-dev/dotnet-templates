@@ -1,21 +1,22 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
-    <TargetFramework>net7.0</TargetFramework>
-    <Nullable>enable</Nullable>
-    <IsPackable>false</IsPackable>
-  </PropertyGroup>
+    <PropertyGroup>
+        <TargetFramework>net7.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+        <IsPackable>false</IsPackable>
+    </PropertyGroup>
 
-  <ItemGroup>
-    <PackageReference Include="Moq" Version="4.18.4" />
-    <PackageReference Include="xunit" Version="2.4.2" />
-  </ItemGroup>
+    <ItemGroup>
+        <PackageReference Include="Moq" Version="4.18.4"/>
+        <PackageReference Include="xunit" Version="2.4.2"/>
+    </ItemGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\Application.Builder\Application.Builder.csproj" />
-    <ProjectReference Include="..\Domain.Contracts\Domain.Contracts.csproj" />
-    <ProjectReference Include="..\Domain.Models\Domain.Models.csproj" />
-    <ProjectReference Include="..\Domain.Usecases\Domain.Usecases.csproj" />
-  </ItemGroup>
+    <ItemGroup>
+        <ProjectReference Include="..\Application.Builder\Application.Builder.csproj"/>
+        <ProjectReference Include="..\Domain.Contracts\Domain.Contracts.csproj"/>
+        <ProjectReference Include="..\Domain.Models\Domain.Models.csproj"/>
+        <ProjectReference Include="..\Domain.Usecases\Domain.Usecases.csproj"/>
+    </ItemGroup>
 
 </Project>

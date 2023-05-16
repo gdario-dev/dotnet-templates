@@ -1,25 +1,26 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
-    <TargetFramework>net7.0</TargetFramework>
-    <Nullable>enable</Nullable>
-  </PropertyGroup>
+    <PropertyGroup>
+        <TargetFramework>net7.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    </PropertyGroup>
 
-  <ItemGroup>
-    <PackageReference Include="Microsoft.Extensions.Configuration" Version="7.0.0" />
-    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="7.0.0" />
-    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="7.0.0" />
-    <PackageReference Include="Microsoft.Extensions.Http" Version="7.0.0" />
-    <PackageReference Include="Microsoft.Extensions.Options.ConfigurationExtensions" Version="7.0.0" />
-  </ItemGroup>
+    <ItemGroup>
+        <PackageReference Include="Microsoft.Extensions.Configuration" Version="7.0.0"/>
+        <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="7.0.0"/>
+        <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="7.0.0"/>
+        <PackageReference Include="Microsoft.Extensions.Http" Version="7.0.0"/>
+        <PackageReference Include="Microsoft.Extensions.Options.ConfigurationExtensions" Version="7.0.0"/>
+    </ItemGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\Domain.Contracts\Domain.Contracts.csproj" />
-    <ProjectReference Include="..\Domain.Mapping\Domain.Mapping.csproj" />
-    <ProjectReference Include="..\Domain.Options\Domain.Options.csproj" />
-    <ProjectReference Include="..\Domain.Usecases\Domain.Usecases.csproj" />
-    <ProjectReference Include="..\Infra.Http\Infra.Http.csproj" />
-    <ProjectReference Include="..\Infra.Persistence\Infra.Persistence.csproj" />
-  </ItemGroup>
+    <ItemGroup>
+        <ProjectReference Include="..\Domain.Contracts\Domain.Contracts.csproj"/>
+        <ProjectReference Include="..\Domain.Mapping\Domain.Mapping.csproj"/>
+        <ProjectReference Include="..\Domain.Options\Domain.Options.csproj"/>
+        <ProjectReference Include="..\Domain.Usecases\Domain.Usecases.csproj"/>
+        <ProjectReference Include="..\Infra.Http\Infra.Http.csproj"/>
+        <ProjectReference Include="..\Infra.Persistence\Infra.Persistence.csproj"/>
+    </ItemGroup>
 
 </Project>

@@ -5,39 +5,30 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace Application.api
+namespace Application.api;
+
+public class Startup
 {
+	public void ConfigureServices(IServiceCollection services)
+	{
+		services
+			.HookFrameworkFeatures()
+			.BuildDependencyTree(Configuration);
+	}
 
-  public class Startup
-  {
+	public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+	{
+		app.BuildApp(env);
+	}
 
-    #region DI
-    public IConfiguration Configuration { get; }
+	#region DI
 
-    public Startup(IConfiguration configuration)
-    {
+	public IConfiguration Configuration { get; }
 
-      Configuration = configuration;
+	public Startup(IConfiguration configuration)
+	{
+		Configuration = configuration;
+	}
 
-    }
-    #endregion DI
-
-    public void ConfigureServices(IServiceCollection services)
-    {
-
-      services
-        .HookFrameworkFeatures()
-        .BuildDependencyTree(Configuration);
-
-    }
-
-    public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
-    {
-
-      app.BuildApp(env);
-
-    }
-
-  }
-
+	#endregion DI
 }
