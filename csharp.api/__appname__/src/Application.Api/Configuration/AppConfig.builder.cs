@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+#pragma warning disable CS1591
 
 namespace Application.api.Configuration;
 

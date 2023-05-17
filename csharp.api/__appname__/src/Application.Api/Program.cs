@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Hosting;
+#pragma warning disable CS1591
 
 namespace Application.api;
 
