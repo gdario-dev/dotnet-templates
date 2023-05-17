@@ -7,13 +7,22 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <ProjectReference Include="..\Application.Builder\Application.Builder.csproj" />
-        <ProjectReference Include="..\Domain.Contracts\Domain.Contracts.csproj" />
-        <ProjectReference Include="..\Domain.Models\Domain.Models.csproj" />
+        <ProjectReference Include="..\Application.Builder\Application.Builder.csproj"/>
+        <ProjectReference Include="..\Domain.Contracts\Domain.Contracts.csproj"/>
+        <ProjectReference Include="..\Domain.Models\Domain.Models.csproj"/>
     </ItemGroup>
 
     <ItemGroup>
-      <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
+        <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0"/>
     </ItemGroup>
+    <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+        <DocumentationFile>bin\$(Configuration)\$(TargetFramework)\Application.Api.xml</DocumentationFile>
+        <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    </PropertyGroup>
+
+    <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+        <DocumentationFile>bin\$(Configuration)\$(TargetFramework)\Application.Api.xml</DocumentationFile>
+        <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    </PropertyGroup>
 
 </Project>
